@@ -5,7 +5,7 @@ CFLAGS  = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard
 CFLAGS += -O0 -g -Wall -ffreestanding -nostdlib
 
 TARGET  = blink
-SRCS    = startup.c main.c
+SRCS    = startup.c main.c usart.c
 
 all: $(TARGET).bin
 

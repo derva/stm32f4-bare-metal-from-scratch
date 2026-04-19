@@ -25,9 +25,9 @@ typedef struct {
 #define USART_CR1_TE   (1 << 3)   // Transmitter enable
 #define USART_CR1_RE   (1 << 2)   // Receiver enable
 
-//void usart2_init(uint32_t baud);
+void usart2_init(uint32_t baud);
 void usart2_send_char(char c);
-//void usart2_send_string(const char *s);
+void usart2_send_string(const char *s);
 char usart2_recv_char(void);
 
 #endif
